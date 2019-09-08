@@ -10,8 +10,9 @@
 
 使用时注意：
 
-> sdk 中未验证数据的合法性，请保证传递的数据正确
-> 图像数据，base64 编码后进行 urlencode，要求 base64 编码和 urlencode 后大小不超过 4M，最短边至少 15px，最长边最大 4096px,
+> sdk 中未验证数据的合法性，请保证传递的数据正确,传入的图片无需进行 去除头及 urlencode,sdk 内部封装的方法会进行处理       
+> <del>图像数据，base64 编码后进行 urlencode</del>，
+> 要求图片大小不超过 4M，最短边至少 15px，最长边最大 4096px  
 > 支持 jjpg/jpeg/png/bmp 格式，当 image 字段存在时 url 字段失效
 
 ### 使用 Qc.BaiduOcrSdk
@@ -23,7 +24,7 @@
 - 银行卡识别(Bankcard)
 - 身份证识别(Idcard)
 - 火车票识别(TrainTicket)
-- 其他接口的快速调用(CommonApi)
+- 其他接口的快速调用(CommonApi)，传入的字典需要自行处理编码&替换base64头
 
 #### 一.安装程序包
 
