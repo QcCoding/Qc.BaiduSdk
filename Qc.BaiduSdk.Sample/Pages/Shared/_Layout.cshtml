@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]-百度Sdk示例</title>
+
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>百度Sdk接口列表</legend>
+            <ul>
+                <li><a asp-page="/Index">授权-获取AccessToken</a></li>
+                <li><a asp-page="/Ocr/GeneralBasic">Ocr-通用文字识别</a></li>
+                <li><a asp-page="/Ocr/Bankcard">Ocr-银行卡识别</a>-----------<a href="https://img2018.cnblogs.com/blog/662652/201909/662652-20190908215853166-32089912.png" target="_blank">银行卡图片</a></li>
+                <li><a asp-page="/Ocr/Idcard">Ocr-身份证识别</a>-----------<a href="https://img2018.cnblogs.com/blog/662652/201909/662652-20190908215934010-998070182.png" target="_blank">身份证图片</a></li>
+                <li><a asp-page="/Ocr/TrainTicket">Ocr-火车票识别</a>-----------<a href="https://img2018.cnblogs.com/blog/662652/201909/662652-20190908215702874-242739571.png" target="_blank">火车票图片</a></li>
+            </ul>
+        </fieldset>
+        <div>
+            <fieldset>
+                <legend>@ViewData["Title"]</legend>
+                @RenderBody()
+            </fieldset>
+        </div>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

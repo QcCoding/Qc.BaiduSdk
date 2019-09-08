@@ -1,0 +1,39 @@
+﻿@page
+@model Qc.BaiduSdk.Sample.Pages.Ocr.IdcardModel
+
+@{
+    ViewData["Title"] = "身份证识别";
+}
+<form method="post">
+    <div style="color:red;">@(ViewData["Message"])</div>
+    <div>
+        <label>请上传图片： <input type="file" accept="jpg,jpeg,png,bmp" id="upload-file" onchange="uploadImage(this)" /></label>
+    </div>
+    <div id="upload-file-preview-block" style="display:none;">
+      <img id="upload-file-preview" src="" />
+    </div>
+    <div>
+        <label>Base64：</label>
+        <div>
+            <textarea asp-for="Base64Str"></textarea>
+        </div>
+    </div>
+    <div>
+        <button asp-page-handler="IdCardBaseStr">识别Base64图片</button>
+    </div>
+</form>
+@section Scripts
+    {
+    <script>
+        function uploadImage(res) {
+            var reads = new FileReader();
+            f = document.getElementById('upload-file').files[0];
+            reads.readAsDataURL(f);
+            reads.onload = function (e) {
+                document.getElementById('upload-file-preview-block').style.display = 'block';
+                document.getElementById('upload-file-preview').src = this.result;
+                document.getElementById('Base64Str').value = this.result;
+            };
+        }
+    </script>
+}
