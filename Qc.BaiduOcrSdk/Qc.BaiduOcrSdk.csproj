@@ -6,8 +6,8 @@
     <Product>BaiduOcrSdk</Product>
     <Description>一个基于 .NET Standard 2.0 构建的 Baidu Ocr Sdk,对百度只能云平台的 Ocr 常用接口进行了封装</Description>
     <Company>QcCoding</Company>
-    <PackageProjectUrl>https://github.com/QcCoding/Qc.BaiduSdk/Qc.BaiduOcrSdk</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/QcCoding/Qc.BaiduSdk/Qc.BaiduOcrSdk</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/QcCoding/Qc.BaiduSdk</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/QcCoding/Qc.BaiduSdk</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseUrl>https://github.com/QcCoding/Qc.BaiduSdk/blob/master/LICENSE</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
