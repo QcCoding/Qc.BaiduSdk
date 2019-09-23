@@ -6,7 +6,7 @@
 
 ## Qc.BaiduOcrSdk
 
-`Qc.BaiduOcrSdk` 时一个基于 `.NET Standard 2.0` 构建，对百度只能云平台的 Ocr 常用接口进行了封装。
+`Qc.BaiduOcrSdk` 是一个基于 `.NET Standard 2.0` 构建，对百度只能云平台的 Ocr 常用接口进行了封装。
 
 使用时注意：
 
